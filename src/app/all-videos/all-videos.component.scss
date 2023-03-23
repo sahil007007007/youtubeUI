@@ -1,0 +1,14 @@
+.all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    overflow-y: scroll;
+    app-video{
+        margin: 20px 13px;
+    }
+}
+
+.all::-webkit-scrollbar {
+    display: none;
+}

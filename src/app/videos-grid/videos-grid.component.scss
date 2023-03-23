@@ -1,0 +1,11 @@
+.all-videos{
+    width: 82vw;
+  //  background-color: grey;
+    height: 100vh;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.all-videos::-webkit-scrollbar {
+    display: none;
+}
