@@ -44,5 +44,12 @@ export class ListTagsComponent {
     "pork",
     "fish"
   ];
-
+  oldIndex=0;
+  newIndex=0;
+  changeBackgroundColor(index: number) {
+    this.oldIndex=this.newIndex;
+    this.newIndex=index;
+    document.getElementById(`${this.newIndex}`)?.classList.add('dark-btn')
+    document.getElementById(`${this.oldIndex}`)?.classList.remove('dark-btn')
+  }
 }

@@ -6,5 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidebar-data.component.scss']
 })
 export class SidebarDataComponent {
-@Input()data:string[]=[];
+  @Input() data: {
+    iconurl: string,
+    name: string,
+  }[] = [];
+  ngOnInit(){
+    if(this.data[0].name==="Home"){
+
+    }
+  }
 }

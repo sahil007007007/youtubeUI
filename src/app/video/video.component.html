@@ -1,21 +1,23 @@
 <div class="video">
     <div class="thumbnail">
-        <img src="assets/images/download.jpg" alt="">
-  <div class="length">10:25</div>
+        <img src="{{imageUrl}}" alt="">
+        <div class="length">{{video.videoLength.minits}}:{{video.videoLength.seconds}}</div>
     </div>
     <div class="content">
         <div class="channel-logo">
             <div class="img">
-                <img src="assets/images/download.jpg" alt="">
+                <img src="{{video.ownerProfilePic}}" alt="">
             </div>
         </div>
         <div class="video-info">
-            <p class="title">Lorem ipsum dolor, sit amet consectetur</p>
-            <p class="user">Sahil Ajmeri</p>
+            <p class="title">{{video.title}}</p>
+            <p class="user">{{video.owner}}</p>
             <div class="views-time">
-                <p>8.2M views </p>
+                <p>{{video.views>=1000000?
+                    ((video.views)/100000+'').slice(0,4)+'M':video.views>100000?(video.views+'').slice(0,3)+'K':video.views}}
+                </p>
                 <div class="dot"></div>
-                <p>2 weeks ago</p>
+                <p>{{video.time+' ago'}}</p>
                 <p></p>
             </div>
         </div>

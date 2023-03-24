@@ -1,5 +1,8 @@
 <div class="all-data">
-    <app-sidebar-data *ngFor="let data of sidebarData" [data]="data"></app-sidebar-data>
-    <div class="border-bottom"></div>
-   
+    <div class="x" *ngFor="let data of sidebarData">
+        <app-sidebar-data [data]="data"></app-sidebar-data>
+        <div class="border-bottom"></div>
+    </div>
+
+
 </div>

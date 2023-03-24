@@ -1,6 +1,6 @@
 <div class="all">
-    <div class="tag" *ngFor="let item of myArray">
-       {{item}}
-    </div>
-  
+    <button *ngFor="let item of myArray;let i = index" id="{{i}}" (click)="changeBackgroundColor(i)" class="tag">
+        {{item}}
+    </button>
+
 </div>

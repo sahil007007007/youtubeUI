@@ -3,8 +3,8 @@
 }
 
 .video {
-    height: 280px;
-    width: 320px;
+    height: 300px;
+    width: 350px;
     //   background-color: red;
 
     .thumbnail {
@@ -57,11 +57,14 @@ position: relative;
 
             .title {
                 ///  font-weight: bold;
-                // font-weight: 600;
+                font-weight: 500;
+                font-family: "Roboto","Arial",sans-serif;
+              font-size: 16px;
+              line-height: 22px;
             }
 
             .user {
-                color: rgb(117, 117, 117);
+                color: #606060;
                 font-size: 14px;
 
             }
@@ -71,14 +74,14 @@ position: relative;
                 align-items: center;
 
                 p {
-                    color: rgb(117, 117, 117);
+                    color: #606060;
                     font-size: 14px;
                 }
 
                 .dot {
                     height: 4px;
                     width: 4px;
-                    background-color: rgb(117, 117, 117);
+                    background-color: #606060;
                     border-radius: 50%;
                     margin: 0 7px;
                 }

@@ -1,20 +1,34 @@
 .all {
     padding: 20px 15px 0 15px;
     position: relative;
-   
-//border-bottom: 1px solid black;
+
+    //border-bottom: 1px solid black;
+
     button {
         display: flex;
         align-items: center;
         padding: 10px 11px;
         border: none;
         width: 100%;
-        margin-bottom: 7px;
+        margin-bottom: 5px;
         background-color: white;
+        font-size: 12px;
+        border-radius: 10px;
+
         .img {
+            background-color: transparent;
+
             img {
-                width: 20px;
-                height: 20px;
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                background-color: transparent;
+            }
+
+            img[alt="assets/icons/home2.png"] {
+                width: 18px;
+                height: 18px;
+              margin-left: 10px;
             }
         }
 
@@ -23,10 +37,17 @@
             font-weight: lighter;
         }
 
+
+
+    }
+
+    button[name="Home"] {
+        background-color: rgb(178, 177, 177);
        
     }
-    .active{
-        background-color: rgb(235, 233, 233);
+
+    .active {
+        //  background-color: rgb(235, 233, 233);
         border-radius: 10px;
     }
 }

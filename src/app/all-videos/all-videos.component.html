@@ -1,15 +1,4 @@
 <div class="all">
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
-    <app-video></app-video>
+    <app-video *ngFor="let video of videoInfo" [video]="video"></app-video>
+   
 </div>
